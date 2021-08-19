@@ -10,7 +10,7 @@ import typeDefs from './schemas';
 
 import { middlewareError } from './middlewares/error/Error';
 
-mongoose.connect("mongodb://localhost:27017/code_drops", {
+mongoose.connect("mongodb+srv://AndDev07:pele@2011@graphqlrest.kxiuc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
