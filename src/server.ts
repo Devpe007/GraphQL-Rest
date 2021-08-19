@@ -11,12 +11,12 @@ mongoose.connect("mongodb://localhost:27017/code_drops", {
   useUnifiedTopology: true,
 });
 
+const app = express();
+
 app.use('/graphql', graphqlHTTP({
   schema,
   graphiql: true,
 }));
-
-const app = express();
 
 app.use(express.json());
 
