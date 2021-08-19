@@ -21,3 +21,7 @@ input PostInput {
 type Mutation {
     createPost(input: PostInput): Post,
 }
+
+type Query {
+    getPostByUser(idUser: ID): [Post],
+}
