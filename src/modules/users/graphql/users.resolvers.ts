@@ -11,9 +11,7 @@ const usersResolvers = {
             return users;
         },
     },
-    Mutation: {
-
-    },
+    // Mutation: {},
 };
 
-export { usersResolvers };
+export default usersResolvers;
