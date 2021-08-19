@@ -10,6 +10,8 @@ import typeDefs from './schemas';
 
 import { middlewareError } from './middlewares/error/Error';
 
+import { routes } from './routes/routes';
+
 mongoose.connect("mongodb+srv://AndDev07:pele@2011@graphqlrest.kxiuc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -21,6 +23,8 @@ const schema = makeExecutableSchema({
   resolvers,
   typeDefs,
 });
+
+app.use(routes);
 
 app.use('/graphql', graphqlHTTP({
   schema,
