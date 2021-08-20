@@ -12,7 +12,7 @@ import { middlewareError } from './middlewares/error/Error';
 
 import { routes } from './routes/routes';
 
-mongoose.connect("mongodb+srv://AndDev07:pele@2011@graphqlrest.kxiuc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://Accont:<password>@graphqlrest.kxiuc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
